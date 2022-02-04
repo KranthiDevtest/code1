@@ -42,6 +42,8 @@ echo " done."
 # push to remote repo
 echo "Pushing to remote ..."
 git init
+echo "testscript.sh" > .gitignore
+echo ".gitignore" >> .gitignore
 git add -A
 git commit -m "first commit"
 git remote rm origin
