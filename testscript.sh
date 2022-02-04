@@ -44,6 +44,7 @@ echo "Pushing to remote ..."
 git init
 echo "testscript.sh" > .gitignore
 echo ".gitignore" >> .gitignore
+git config --global core.excudefiles ~/.gitignore_global
 git add -A
 git commit -m "first commit"
 git remote rm origin
